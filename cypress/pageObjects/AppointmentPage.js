@@ -36,4 +36,12 @@ export class AppointmentPage extends BasePage {
     static get bodyTop() {
         return cy.get('[id="top"]');
     }
+
+    static get menuBtn() {
+        return cy.get('[id="menu-toggle"]');
+    }
+
+    static get sidebarBtnList() {
+        return cy.get('[class="sidebar-nav"] a');
+    }
 }
